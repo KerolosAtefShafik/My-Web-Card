@@ -1,0 +1,300 @@
+:root {
+  --main-transition: 0.5s;
+  --main-padding: 50px;
+}
+/* Start Global Rules  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small Screen  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium Screen  */
+@media (min-width: 922px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large Screen  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+/*start card-section */
+.card-section {
+  background-color: black;
+  background-image: url(../IMAGES/b1.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 0;
+}
+.card-section .overlay {
+  position: absolute;
+  background-color: rgb(0 0 0 / 80%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.card-section .overlay .sound {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 33px;
+}
+
+.card-section .first-part .name {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  color: #fff;
+  padding-top: 80px;
+}
+@media (max-width: 979px) {
+  .card-section .first-part .name {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .card-section .first-part .name {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 676px) {
+  .card-section .first-part .name {
+    font-size: 20px;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .card-section .first-part .name {
+    font-size: 20px;
+    padding-top: 80px;
+  }
+}
+.card-section .first-part .job {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 5px;
+  color: #fff;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .card-section .first-part .job {
+    font-size: 15px;
+  }
+}
+.card-section .first-part .company {
+  text-align: center;
+  padding-top: 5px;
+}
+.card-section .first-part .company a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .card-section .first-part .company a {
+    font-size: 11px;
+  }
+}
+.card-section .first-part .company a:hover,
+.card-section .first-part .company a:active {
+  color: red;
+}
+.card-section .second-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .card-section .second-part {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.card-section .second-part .image {
+  max-width: fit-content;
+}
+.card-section .second-part .image img {
+  height: 200px;
+  max-width: 100%;
+  border-radius: 25%;
+}
+@media (max-width: 767px) {
+  .card-section .second-part .image img {
+    height: 120px;
+    border-radius: 50%;
+  }
+}
+.card-section .second-part .contacts {
+  padding-left: 15px;
+}
+@media (max-width: 767px) {
+  .card-section .second-part .contacts {
+    padding-top: 15px;
+  }
+}
+.card-section .second-part .contacts .location p {
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 6767px) {
+  .card-section .second-part .contacts .location p {
+    text-align: inherit;
+  }
+}
+.card-section .second-part .contacts .location p i {
+  font-size: 18px;
+  color: #ff8100;
+}
+@media (max-width: 767px) {
+  .card-section .second-part .contacts .location p i {
+    font-size: 18px;
+  }
+}
+.card-section .second-part .contacts .location p a {
+  font-size: 18px;
+  padding-left: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .card-section .second-part .contacts .location p a {
+    font-size: 15px;
+  }
+}
+.card-section .second-part .contacts .location p a:hover,
+.card-section .second-part .contacts .location p a:active {
+  color: #ff8100;
+}
+.card-section .second-part .phone-number {
+  padding-top: 12px;
+}
+.card-section .second-part .phone-number p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .card-section .second-part .phone-number p {
+    font-size: 15px;
+  }
+}
+.card-section .second-part .phone-number p i {
+  font-size: 18px;
+  color: blue;
+  padding-right: 10px;
+}
+@media (max-width: 767px) {
+  .card-section .second-part .phone-number p i {
+    font-size: 15px;
+  }
+}
+.card-section .second-part .web-site {
+  padding-top: 12px;
+}
+.card-section .second-part .web-site p i {
+  font-size: 18px;
+  color: green;
+}
+@media (max-width: 767px) {
+  .card-section .second-part .web-site p i {
+    font-size: 15px;
+  }
+}
+.card-section .second-part .web-site p a {
+  font-size: 18px;
+  padding-left: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .card-section .second-part .web-site p a {
+    font-size: 15px;
+  }
+}
+.card-section .second-part .web-site p a:hover,
+.card-section .second-part .web-site p a:active {
+  color: green;
+}
+.card-section .second-part .links {
+  padding-top: 12px;
+}
+.card-section .second-part .links ul {
+  display: flex;
+  justify-content: center;
+}
+.card-section .second-part .links ul li {
+  padding-left: 12px;
+}
+.card-section .second-part .links ul li i {
+  font-size: 29px;
+}
+.card-section .second-part .links ul li .linked {
+  color: blue;
+}
+.card-section .second-part .links ul li .watts {
+  color: green;
+}
+.card-section .second-part .links ul li .twitter {
+  color: blue;
+}
+.card-section .second-part .links ul li .facebook {
+  color: #000097;
+}
+.card-section .second-part .links ul li .linked:hover,
+.card-section .second-part .links ul li .linked:active,
+.card-section .second-part .links ul li .watts:hover,
+.card-section .second-part .links ul li .watts:active,
+.card-section .second-part .links ul li .twitter:hover,
+.card-section .second-part .links ul li .twitter:active,
+.card-section .second-part .links ul li .facebook:hover,
+.card-section .second-part .links ul li .facebook:active {
+  color: #fff;
+}
+/* End card-section  */
