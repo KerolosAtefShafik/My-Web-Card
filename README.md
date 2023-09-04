@@ -12,7 +12,3 @@ A Web Card is a simple introduction of person like personal card throught the we
 ## The used Methods in the project:
 
 1.  Access elements methods via `document.getElementById()` and `document.querySelectorAll()`.
-
-## Copy Rights
-
-All Copy Rights of the music Refers to " Why Not 3 Series".
